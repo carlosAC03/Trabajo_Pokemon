@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalla Pokémon</title>
+  <link rel="stylesheet" href="pokecss.css">
+</head>
+<body>
+  <header>
+    <h1>¡Batalla Pokémon!</h1>
+  </header>
+  <main class="body3">
+    <section id="pantalla-combate" class="pantalla active">
+      <h2 class="batalla">¡Batalla en Curso!</h2>
+      <div id="battleField">
+        <div class="battle-status">
+          <div class="pokemon-side">
+            <img id="playerImage" src="" alt="Player Pokémon">
+            <div class="health-bar">
+              <div id="playerHealth" class="health"></div>
+            </div>
+          </div>
+          <div class="pokemon-side">
+            <img id="opponentImage" src="" alt="Opponent Pokémon">
+            <div class="health-bar">
+              <div id="opponentHealth" class="health"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottonCentrar">
+          <button onclick="performAttack()">Atacar</button>
+          <button onclick="performCurar()">Curarse</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="pokejs.js"></script>
+</body>
+</html>
